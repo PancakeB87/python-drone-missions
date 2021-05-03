@@ -54,8 +54,8 @@ send("land", 5)
 sock.close()
 
 #Door mission
-doorlength = 127
-doorwidth = 91.44
+doorlength = 127 #coverted to cm from inches
+doorwidth = 91.44 #coverted to cm from inches
 send("command", 3)
 send("takeoff", 5)
 send("up" + str(doorlength / 2), 4)
@@ -67,8 +67,8 @@ send("land", 5)
 sock.close()
 
 #Window Mission
-windowLength = 127
-windowWidth = 91.44
+windowLength = 127 #coverted to cm from inches
+windowWidth = 91.44 #coverted to cm from inches
 send("command", 3)
 send("takeoff", 5)
 send("left" + str(windowLength / 2), 4)
@@ -80,8 +80,8 @@ send("land", 5)
 sock.close()
 
 #Turning Door Mission
-doorlength = 127
-doorwidth = 91.44
+doorlength = 127 #coverted to cm from inches
+doorwidth = 91.44 #coverted to cm from inches
 yawangle = 90
 send("command", 3)
 send("takeoff", 5)
@@ -89,19 +89,19 @@ send("up" + str(doorlength / 2), 4)
 send("cw " + str(yawangle), 3)
 send("forward " + str(doorwidth), 4)
 send("cw " + str(yawangle), 3)
-#send(___, 5)
+send("hover", 5)
 send("down" + str(doorlength), 4)
 send("cw " + str(yawangle), 3)
 send("forward " + str(doorwidth), 4)
 send("cw " + str(yawangle), 3)
-#send(___, 5)
+send("hover", 5)
 send("up" + str(doorlength / 2), 4)
 send("land", 5)
 sock.close()
 
 #Turning Window Mission
-windowLength = 127
-windowWidth = 91.44
+windowLength = 127 #coverted to cm from inches
+windowWidth = 91.44 #coverted to cm from inches
 yawangle = 90
 send("command", 3)
 send("takeoff", 5)
@@ -121,12 +121,12 @@ sock.close()
 flightdistance = input("Enter flight distance in inches ")
 send("command", 3)
 send("takeoff", 5)
-send("forward" + str(flightdistance * 2.54), 4)
+send("forward" + str(flightdistance * 2.54), 4) #coverted to cm from inches
 send("land", 5)
 sock.close()
 
 #Equilateral Triangle Mission
-trianglelength = 91.44
+trianglelength = 91.44  #coverted to cm from inches
 yawangle = 120
 send("command", 3)
 send("takeoff", 5)
@@ -139,7 +139,7 @@ send("land", 5)
 sock.close()
 
 #Star Mission
-forwardlength = 127
+forwardlength = 127 #coverted to cm from inches
 yawangle = 144
 send("command", 3)
 send("takeoff", 5)
@@ -150,7 +150,7 @@ send("land", 5)
 sock.close()
 
 #Turning Box Mission
-boxlength = 76.2
+boxlength = 76.2 #coverted to cm from inches
 yawangle = 90
 send("command", 3)
 send("takeoff", 5)
@@ -166,7 +166,7 @@ send("land", 5)
 sock.close()
 
 #Loop Box Mission
-boxlength = 76.2
+boxlength = 76.2 #coverted to cm from inches
 yawangle = 90
 send("command", 3)
 send("takeoff", 5)
