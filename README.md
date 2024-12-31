@@ -2,6 +2,7 @@
 
 This project is part of my work with Drone Cadets. I helped create a Python-based mission planning algorithm for a DJI Tello Drone.
 Drone communication occurs through Tello SDK and by sending UDP (User Datagram Protocol) Packets. In other words, a way to send messages to a Tello drone over Wifi.
+
 In "main.py," a series of missions have been made, creating various shapes or simple maneuvers with the drone's movement. The following missions exist sequentially:
 - Box Mission: Takeoff, create a horizontal square, land.
 - Backflip Mission: Takeoff, do a backflip, land. 
